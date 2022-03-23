@@ -5,6 +5,12 @@ app.get('/' , (req , res) =>{
   res.send('Wow it\'s workin ')
 })
 
+app.post('/' , (req , res) =>{
+
+  res.send(req.body)
+})
+
+
 app.listen(port , ()=>{
   console.log(`server is running on port ${port}`)
 })
